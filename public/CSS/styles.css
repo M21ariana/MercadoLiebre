@@ -1,0 +1,150 @@
+body {
+
+    font-family: 'Roboto', sans-serif;;
+    background-color: #ebebeb;
+    }
+    
+@media(max-width:361px){
+    main section article h3.descripcion {
+        visibility: hidden;
+    }
+    header nav{
+        visibility: hidden;
+    }
+    body header img.logo{
+        width: 90vw
+        
+    }
+    header div.input{
+        width: 90vw;
+        box-sizing: border-box; 
+
+    }
+}
+
+
+
+@media(min-width:361px){
+    main section article.producto {
+        box-shadow:  0px 0px 10px rgb ( 100 , 100 , 100 );
+    }
+    header div.burguer-menu i {
+        visibility: hidden;
+    }
+    body header img.logo{
+        width: 40vw
+        
+    }
+}
+
+
+    
+    header nav{
+        font-size: 12px;
+    }
+    header {
+        background-color: #EAC926;  
+        width: 100vw;
+    }
+
+    header ul li {
+        list-style-type: none;
+    }
+
+    header ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    div.burguer-menu i {
+        background-color: #0044AA;
+        border-radius: 5px;
+        color: #FFF;
+        font-size: 20px;
+        height: 40px;
+        width:40px;
+        margin: 10px 0 20px 0px;
+        padding: 10px;
+    }
+        
+
+    header div.input {
+        display: flex;
+        background-color: #FFF;
+        border: 1px solid #000;
+        color: darkgrey;
+        font-size: 60%;       
+        width: 40vw;
+        height: 5vh;
+        margin: 10px;  
+        align-items: center;     
+        box-sizing: border-box; 
+    }
+
+    header p.lupa{
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    
+
+    main.flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        width: 100vw;
+        text-align: left;
+        box-sizing: border-box;
+
+    }    
+
+    main section article img.banner{
+        width: 100vw;
+    }
+
+    main section h3.titulares {
+        font-size: 24px; 
+    }
+
+    main section article.producto {
+        margin: 0 0 10px 0;
+                
+    }
+
+    main section article div.caja-articulo{
+        margin: 0 0 15px 0;
+        width: 360px;
+        border-top: 1px;
+        border-style: solid;
+        padding:15px;
+        border: #ebebeb ;
+        background-color: white;
+        box-sizing: border-box;
+                
+    }
+    main div.camion{
+        color:#39b54a;
+    }
+    
+
+    main section article p.precio {
+        font-size: 18px;
+    }
+
+    main section article p.descuentos {
+        font-size: 16px;
+    }
+
+    main section article h3.descripcion {
+        font-size: 16px;
+    }
+
+    footer section.noticia{        
+        text-align: center;
+
+    }
+
+    footer section div.icono i {
+        font-size: 2em;
+        color: #0044AA;
+        margin: 0px 0 10px 0px;
+    }
