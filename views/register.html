@@ -1,90 +1,190 @@
-<!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel= "stylesheet" type= "text/css" herf="https://fonts.googleapis.com/css2family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" >
-    <link rel="stylesheet" href="CSS/styles.css">
-
-    <!-- Title Page -->  
-    <title>Regiter</title>
+    <link rel= "stylesheet" type= "text/css" herf="https://fonts.googleapis.com/css2family=Roboto&display=swap" rel="stylesheet">
+    <link href="CSS/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/01101ea037.js" crossorigin="anonymous"></script>
     
-</head>
-<body>
-    <main>
+    <!-- Title Page -->  
+    <title>Crea tu cuenta</title>   
 
-    <div id="container">
+</head>
+
+
+<body>
+
+
+    <header class="mainHeader">
+
+        <section class="topBar">
+
+            <img src = "/images/logo-mercado-liebre.svg" class="mainHeaderLogo" alt ="Logo de Mercado Liebre">
+            
+            <div class="mainHeaderSearchBar">
+                <form class="navSearch">
+                    <input class="inputSearch" type="text" placeholder="Buscar productos, marcas">
+                    <i class="fa fa-search"></i>
+                </form>
+            </div>
+
+            <p id ="headerPagoCuotas">
+                <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito
+            </p>
+
+        </section>
+
+        <nav class="mainNavbar">
+
+            <ul class="leftNavbar">
+                <li><a hreft ="#">Ofertas</a></li>
+                <li><a hreft ="#">Tiendas Oficiales</a></li>
+                <li><a hreft ="#">Vender</a></li>
+                <li><a hreft ="#">Ayuda</a></li>
+            </ul>
+            <ul class="rightNavbar">
+                <li>
+                    <a hreft ="register">Creá tu cuenta 
+                        <i class="far fa-id-card"></i>
+                    </a>
+                </li>
+                <li>
+                    <a hreft ="login">Ingresá
+                        <i class="fas fa-sign-in-alt"></i>
+                    </a>
+                </li>
+                <li>
+                    <a hreft ="#">Mis compras 
+                        <i class="fas fa-shopping-basket"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="burguer-menu">
+            <i class="fa fa-bars burguer"></i>
+        </div>
+
+    </header>
+
+
+    <main class="mainForm">
         <form action="/" method="post">
+         
             <!-- Username -->
-            <div>
+            <div class="inputForm">
                 <label for="nombre">Nombre y apellido</label>
-                <input class="inputNombre" type="Nombre" id="nombre" placeholder="Nombre y apellido" name="nombre"> 
+                <input type="Nombre" id="nombre" placeholder="Ej: María Sánchez" name="nombre"> 
             </div>
-            <div>
-                <label for="usuario">Nombre de usuari@</label>
-                <input class="inputNombre" type="usuario" id="usuario" placeholder="Nombre de Usuari@" name="nombre"> 
+
+            <div class="inputForm">
+                <label for="usuario">Nombre de usuario</label>
+                <input type="usuario" id="usuario" placeholder="8 caracteres" name="usuario"> 
             </div>
-            <!-- Password -->
-            <div>
+
+            <!-- Fecha de nacimiento -->
+            <div class="inputForm">
                 <label for="nacimiento">Fecha de nacimiento</label>
-                <input type="date" id="FechaNacimiento" placeholder="Fecha de nacimiento" name="fecha">
+                <input type="date" id="fechaNacimiento" placeholder="DD/MM/AA" name="fechaNacimiento">
             </div>
+
             <!-- Dirección -->
-            <div>
-                <label for="Domicilio">Domicilio</label>
-                <input type="domicilio" id="domicilio" placeholder="Domicilio" name="domicilio">
+            <div class="inputForm">
+                <label for="domicilio">Domicilio</label>
+                <input type="text" id="domicilio" placeholder="Ej: Calle 66b # 44 - 21" name="domicilio">
             </div>
+
             <!-- Perfil de usuario -->
-            <div>
-                <label for="Perfil">Perfil del usuario</label>
-                <input type="radio" id="perfil" name="perfil-del-usuario" value="Comprador">
-                <input type="radio" id="perfil" name="perfil-del-usuario" value="Vendedor">
+            <div class="inputForm">
+                <label for="perfil">Perfil del usuario</label>
+                <select id ="perfil">
+                    <option value="" selected disabled>Perfil de usuario</option>
+                    <option value="comparar">Comprador</option>
+                    <option value="vender">Vendedor</option>
+                </select>
             </div>
 
             <!-- Categoría de interés -->
-            <div>
-                <label for="categoriaInteres">Categoría de interés</label>
-                <input type="checkbox" id="categoriaInteres" name="categoriaInteres" value="Electro">
-                <input type="checkbox" id="categoriaInteres" name="categoriaInteres" value="Moda">
-                <input type="checkbox" id="categoriaInteres" name="categoriaInteres" value="Hogar">
-                <input type="checkbox" id="categoriaInteres" name="categoriaInteres" value="Juguetería">
-                <input type="checkbox" id="categoriaInteres" name="categoriaInteres" value="Vida sana">
+            <div class="inputForm">
+                <label>Categoría de interés</label>
+                    <input type="checkbox" id="electro" name="categoriaInteres">
+                    <label for="electro">Electro</label>
+                    <input type="checkbox" id="moda" name="categoriaInteres">
+                    <label for="moda">Moda</label>
+                    <input type="checkbox" id="hogar" name="categoriaInteres">
+                    <label for="hogar">Hogar</label>
+                    <input type="checkbox" id="jugueteria" name="categoriaInteres">
+                    <label for="jugueteria">Juguetería</label>
+                    <input type="checkbox" id="vidasana" name="categoriaInteres">
+                    <label for="vidasana">Vida sana</label>
             </div>
 
             <!-- Foto de usuario -->
-            <div>
-                <label for="foto">Perfil del usuario</label>
-                <input type="file" id="foto" name="avatar" accept=".jpg">                
+            <div class="inputForm">
+                <label for="foto">Perfil de usuario</label>
+                <input type="file" id="foto" name="foto" accept=".jpg">                
             </div>
 
             <!-- Contraseña -->
-            <div>
-                <label for="contrasenia">Contraseña</label>
-                <input type="password" id="contrasenia" placeholder="Contraseña" name="contrasenia">                
-            </div>
-            <div>
-                <label for="contrasenia">Confirmar contraseña</label>
-                <input type="password" id="contrasenia" placeholder="Contraseña" name="contrasenia">                
+            <div class="inputForm">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" placeholder="8 caracteres" name="contrasena">                
             </div>
 
-            <!-- Botón de enviar -->
-            <div>
-                <label for="botonEnviar"><a hreft ="views/home.html">Enviar</a></label>
-                <input type="sentBotton" id="botonEnviar" placeholder="Enviar" name="botonEnviar">
+            <div class="inputForm">
+                <label for="contrasena2">Confirmar contraseña</label>
+                <input type="password" id="contrasena2" placeholder="8 caracteres" name="contrasena2">                
             </div>
-            
-            <!-- Botón de enliminar -->
-            <div>
-                <label for="botonBorrar">
-                    <a hreft ="views/home.html">Enviar</a>
-                </label>
-                <input type="deleteBotton" id="botonBorrar" placeholder="Borrar" name="botonBorrar">
+
+            <!-- Botón de eniar y eliminar -->
+            <div class="inputForm">
+                <button type="submit" class="form-button">
+                    <a href="/" >Enviar</a>
+                </button>
+                <button type="reset" class="form-button">
+                    Borrar
+                </button>
             </div>
-            
+
         </form>       
-    </div>
+    
 
     </main>
+    
+
+    <footer>
+        <section class="seccionFooter">
+            <i class="fa fa-credit-card"></i>                
+            <h3>Pagá con tarjetas o en efectivo</h3>
+            <p class="condicionFooter">
+                Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
+            </p>
+        </section>
+
+        <section class="seccionFooter">
+            <i class="fa fa-gift"></i>
+            <h3>Envío gratis desde $2.500</h3>
+            <p class="condicionFooter">
+                Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
+            </p>
+        </section>
+
+        <section class="seccionFooter">
+            <i class="fa fa-user-shield"></i>
+            <h3>Seguridad, de principio a fin</h3>
+            <p class="condicionFooter">
+                ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
+            </p>
+        </section> 
+
+        <section class="SeccionCondicionFooter">
+            Copyright © 1999-2020 MercadoLiebre S.R.L.
+        </section> 
+
+    </footer>
+
+
 </body>
 </html>
